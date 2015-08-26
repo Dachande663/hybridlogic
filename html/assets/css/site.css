@@ -133,7 +133,7 @@ a:hover, a:active {
 
 
 .text--primary {
-	padding: 0 10px;
+	padding: 28px 70px 0 7px;
 	font-family: Montserrat, Tahoma, Geneva, sans-serif;
 	font-size: 21px;
 	line-height: 34px;
@@ -155,7 +155,7 @@ a:hover, a:active {
 
 
 .stats {
-	padding: 0 10px;
+	padding: 27px 10px 0 27px;
 }
 
 .stats dt {
@@ -165,7 +165,7 @@ a:hover, a:active {
 }
 
 .stats dd {
-	margin-bottom: 21px;
+	margin-bottom: 32px;
 	font-size: 14px;
 }
 
