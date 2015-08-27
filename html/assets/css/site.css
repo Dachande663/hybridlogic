@@ -209,6 +209,7 @@ a:hover, a:active {
 
 
 .image-set {
+	position: relative;
 	width: 100%;
 	overflow: hidden;
 }
@@ -217,16 +218,13 @@ a:hover, a:active {
 	width: 117%;
 	height: 360px;
 	margin-left: -7%;
-	background: #d0d9ae;
 	overflow: hidden;
 }
 
 .image-set__primary {
+	position: relative;
 	float: left;
 	width: 62%;
-}
-.image-set__primary {
-	position: relative;
 	height: 100%;
 }
 
@@ -238,18 +236,21 @@ a:hover, a:active {
 	background-position: center;
 }
 
-.image-set__link span {
-	position: absolute;
-	top: 25px;
-	left: calc(10.3% + 25px);
-	background: #0c1929;
-}
-
 .image-set__more {
 	position: absolute;
 	bottom: 25px;
 	right: 25px;
+	padding: 2px 4px 4px 7px;
 	background: #0c1929;
+	color: #fff;
+	text-decoration: none;
+}
+.image-set__more:link, .image-set__more:visited {
+	color: #fff;
+	text-decoration: none;
+}
+.image-set__more:hover, .image-set__more:active {
+	color: #b64f3f;
 }
 
 
@@ -257,7 +258,6 @@ a:hover, a:active {
 	float: right;
 	width: 38%;
 	font-size: 0;
-	background: red;
 }
 
 .image-set__grid a {
@@ -265,13 +265,32 @@ a:hover, a:active {
 	float: left;
 	width: 233px;
 	height: 175px;
+	margin: 0 0 10px 10px;
 	background-size: cover;
 }
 
 
 
+.image-set__container {
+	position: absolute;
+	width: 100%;
+	top: 25px;
+	pointer-events: none;
+}
 
 
+.image-set__container a {
+	padding: 2px 14px 4px 4px;
+	background: #0c1929;
+	font-size: 21px;
+	color: #fff;
+	text-decoration: none;
+	pointer-events: auto;
+}
+
+.image-set__container a:hover, .image-set__container a:active {
+	color: #b64f3f;
+}
 
 
 
