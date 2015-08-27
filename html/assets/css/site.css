@@ -240,7 +240,7 @@ a:hover, a:active {
 	position: absolute;
 	bottom: 25px;
 	right: 25px;
-	padding: 2px 4px 4px 7px;
+	padding: 2px 8px 4px 17px;
 	background: #0c1929;
 	color: #fff;
 	text-decoration: none;
@@ -274,13 +274,14 @@ a:hover, a:active {
 .image-set__container {
 	position: absolute;
 	width: 100%;
-	top: 25px;
+	top: 29px;
 	pointer-events: none;
 }
 
 
 .image-set__container a {
-	padding: 2px 14px 4px 4px;
+	display: inline-block;
+	padding: 0 14px 4px 7px;
 	background: #0c1929;
 	font-size: 21px;
 	color: #fff;
