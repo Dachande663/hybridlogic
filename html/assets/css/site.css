@@ -308,7 +308,7 @@ a:hover, a:active {
 
 
 .list {
-
+	padding: 0 10px;
 }
 
 .list__item {
