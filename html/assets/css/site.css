@@ -52,7 +52,8 @@ a:hover, a:active {
 .right { float: right; }
 
 
-
+.pr { padding-right: 10px; }
+.pl { padding-left: 10px; }
 
 
 
@@ -338,6 +339,9 @@ a:hover, a:active {
 	line-height: 24px;
 }
 
+.list--condensed .list__item {
+	font-size: 14px;
+}
 
 
 
