@@ -314,6 +314,29 @@ a:hover, a:active {
 	margin-bottom: 27px;
 }
 
+.list__item h3 {
+	margin-bottom: 14px;
+}
+
+.list__item h3, .list__item h3 a {
+	color: #3672ba;
+	font-size: 21px;
+	text-decoration: none;
+}
+.list__item h3 a:hover, .list__item h3 a:active {
+	color: #b64f3f;
+}
+
+.list__item h3 small {
+	padding-left: 6px;
+	font-size: 21px;
+	color: #a0a3a9;
+}
+
+.list__item p {
+	font-size: 16px;
+	line-height: 24px;
+}
 
 
 
