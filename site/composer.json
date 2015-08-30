@@ -1,0 +1,43 @@
+{
+    "name": "hybridlogic/site",
+    "description": "The HybridLogic website",
+    "type": "project",
+    "license": "proprietary",
+    "homepage": "http://hybridlogic.co.uk",
+    "authors": [
+        {
+            "name": "Luke Lanchester",
+            "email": "luke@lukelanchester.com",
+            "homepage": "http://hybridlogic.co.uk"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "composer/installers": "~1.0.12",
+        "johnpbloch/wordpress": "4.3",
+        "wp-slab/slab-core": "dev-master"
+    },
+    "extra": {
+        "installer-paths": {
+            "public/app/plugins/{$name}/": ["type:wordpress-plugin"],
+            "public/app/themes/{$name}/": ["type:wordpress-theme"]
+        },
+        "wordpress-install-dir": "public/wp"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "rm -rf public/wp/wp-content",
+            "rm -rf public/wp/composer.json",
+            "rm -rf public/wp/license.txt",
+            "rm -rf public/wp/readme.html",
+            "rm -rf public/wp/wp-config-sample.php"
+        ],
+        "post-update-cmd": [
+            "rm -rf public/wp/wp-content",
+            "rm -rf public/wp/composer.json",
+            "rm -rf public/wp/license.txt",
+            "rm -rf public/wp/readme.html",
+            "rm -rf public/wp/wp-config-sample.php"
+        ]
+    }
+}
