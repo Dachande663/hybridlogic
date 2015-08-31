@@ -1,21 +1,21 @@
 <?php
 
-namespace HybridLogic\Photos\Controller;
+namespace HybridLogic\Flickr\Controller;
 
-use HybridLogic\Photos\Repository\PhotoRepositoryInterface;
+use HybridLogic\Flickr\Repository\PhotoRepositoryInterface;
 use Slab\Core\Exception\HttpNotFoundException;
 
 /**
- * Flickr Controller
+ * Photos Controller
  *
  * @package default
  * @author Luke Lanchester
  **/
-class FlickrController {
+class PhotosController {
 
 
 	/**
-	 * @var HybridLogic\Photos\Repository\PhotoRepositoryInterface
+	 * @var HybridLogic\Flickr\Repository\PhotoRepositoryInterface
 	 **/
 	protected $photos;
 
@@ -23,7 +23,7 @@ class FlickrController {
 	/**
 	 * Constructor
 	 *
-	 * @param HybridLogic\Photos\Repository\PhotoRepositoryInterface
+	 * @param HybridLogic\Flickr\Repository\PhotoRepositoryInterface
 	 * @return void
 	 **/
 	public function __construct(PhotoRepositoryInterface $photos) {

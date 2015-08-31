@@ -21,9 +21,11 @@ define('HL_FLICKR_URL', plugin_dir_url(__FILE__));
 // Init
 add_action('slab_loaded', function($slab){
 
-	$slab->autoloader->registerNamespace('HybridLogic\Photos', HL_FLICKR_DIR . 'src');
+	$slab->autoloader->registerNamespace('HybridLogic\Flickr', HL_FLICKR_DIR . 'src');
 
-	$slab->router->get('photos', 'HybridLogic\Photos\Controller\FlickrController@getPhotos');
-	$slab->router->get('photos/{id}', 'HybridLogic\Photos\Controller\FlickrController@getPhoto');
+	$slab->singleton('HybridLogic\Flickr\Repository\PhotoRepositoryInterface', 'HybridLogic\Flickr\Repository\PhotoRepository');
+
+	$slab->router->get('photos', 'HybridLogic\Flickr\Controller\PhotosController@getPhotos');
+	$slab->router->get('photos/{id}', 'HybridLogic\Flickr\Controller\PhotosController@getPhoto');
 
 });
