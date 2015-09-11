@@ -267,19 +267,24 @@ a:hover, a:active {
 .image-set__more {
 	position: absolute;
 	display: inline-block;
-	bottom: 25px;
-	right: 25px;
+	bottom: 12px;
+	right: 12px;
+	padding: 13px;
+}
+
+.image-set__more span {
+	display: inline-block;
 	padding: 2px 8px 4px 17px;
 	background: #0c1929;
 	color: #fff;
 	text-decoration: none;
 }
 
-.image-set__more:link, .image-set__more:visited {
+.image-set__more:link span, .image-set__more:visited span {
 	color: #fff;
 	text-decoration: none;
 }
-.image-set__more:hover, .image-set__more:active {
+.image-set__more:hover span, .image-set__more:active span {
 	color: #b64f3f;
 }
 
