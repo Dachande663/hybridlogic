@@ -304,12 +304,14 @@ a:hover, a:active {
 	float: left;
 	width: calc(50% - 15px);
 	height: 165px;
-	margin: 0 0px 20px 10px;
+	margin: 0 10px 20px 10px;
 	background-size: cover;
 	background-position: center;
 }
 
-
+.image-set__grid li:nth-child(2n) a {
+	margin-right: 0;
+}
 
 
 
