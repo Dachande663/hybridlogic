@@ -229,13 +229,62 @@ a:hover, a:active {
 }
 
 .image-set__primary {
+	position: relative;
 	float: left;
-	display: block;
 	width: calc(66.67% - 10px);
 	height: 350px;
+}
+
+.image-set__main {
+	display: block;
+	width: 100%;
+	height: 100%;
 	background-size: cover;
 	background-position: center;
 }
+
+.image-set__main span {
+	position: absolute;
+	display: inline-block;
+	top: 20px;
+	left: 20px;
+	padding: 0 14px 4px 7px;
+	background: #0c1929;
+	font-size: 21px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.image-set__main:link span, .image-set__main:visited span {
+	color: #fff;
+	text-decoration: none;
+}
+.image-set__main:hover span, .image-set__main:active span {
+	color: #b64f3f;
+}
+
+
+.image-set__more {
+	position: absolute;
+	display: inline-block;
+	bottom: 25px;
+	right: 25px;
+	padding: 2px 8px 4px 17px;
+	background: #0c1929;
+	color: #fff;
+	text-decoration: none;
+}
+
+.image-set__more:link, .image-set__more:visited {
+	color: #fff;
+	text-decoration: none;
+}
+.image-set__more:hover, .image-set__more:active {
+	color: #b64f3f;
+}
+
+
+
 
 .image-set__grid {
 	float: right;
@@ -256,12 +305,7 @@ a:hover, a:active {
 }
 
 
-.image-set__more {
-	position: absolute;
-	left: 50%;
-	bottom: 20px;
-	background: red;
-}
+
 
 
 
