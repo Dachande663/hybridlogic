@@ -236,18 +236,17 @@ a:hover, a:active {
 
 .image-set__main {
 	display: block;
-	width: 100%;
+	width: calc(100% - 10px);
 	height: 100%;
 	background-size: cover;
 	background-position: center;
-	/*border-right: 10px solid white;*/
 }
 
 .image-set__more {
 	position: absolute;
 	display: inline-block;
 	bottom: 12px;
-	right: 12px;
+	right: 22px;
 	padding: 13px;
 }
 
@@ -285,134 +284,25 @@ a:hover, a:active {
 
 
 
-
-
-
-
-
 .image-set__grid {
-	background: red;
 	float: right;
 	width: 33.33%;
 	font-size: 0;
-	/*margin-left: -10px;*/
-	/*margin-top: 10px;*/
-	/*background: yellow;*/
 }
 
 .image-set__grid a {
 	display: block;
 	float: left;
-	/*width: calc(50% - 15px);*/
-	width: 50%;
-	/*height: calc(width);*/
-	padding-top: 50%;
-	/*height: 165px;*/
-	/*margin: 0 10px 20px 10px;*/
+	width: calc(50% - 15px);
+	padding-top: calc(50% - 15px);
 	background-size: cover;
 	background-position: center;
 }
 
-.image-set__grid li:nth-child(2n) a {
-	margin-right: 0;
-}
-
-
-
-
-
-/*
-
-.image-set {
-	position: relative;
-	width: 100%;
-	margin-bottom: 30px;
-	overflow: hidden;
-}
-
-.image-set__inner {
-	width: 117%;
-	height: 360px;
-	margin-left: -7%;
-	overflow: hidden;
-}
-
-.image-set__primary {
-	position: relative;
-	float: left;
-	width: 62%;
-	height: 100%;
-}
-
-.image-set__link {
-	display: block;
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-position: center;
-}
-
-.image-set__more {
-	position: absolute;
-	bottom: 25px;
-	right: 25px;
-	padding: 2px 8px 4px 17px;
-	background: #0c1929;
-	color: #fff;
-	text-decoration: none;
-}
-.image-set__more:link, .image-set__more:visited {
-	color: #fff;
-	text-decoration: none;
-}
-.image-set__more:hover, .image-set__more:active {
-	color: #b64f3f;
-}
-
-
-.image-set__grid {
-	float: right;
-	width: 38%;
-	font-size: 0;
-}
-
-.image-set__grid a {
-	display: block;
-	float: left;
-	width: 233px;
-	height: 175px;
-	margin: 0 0 10px 10px;
-	background-size: cover;
-}
-
-
-
-.image-set__container {
-	position: absolute;
-	width: 100%;
-	top: 29px;
-	pointer-events: none;
-}
-
-
-.image-set__container a {
-	display: inline-block;
-	padding: 0 14px 4px 7px;
-	background: #0c1929;
-	font-size: 21px;
-	color: #fff;
-	text-decoration: none;
-	pointer-events: auto;
-}
-
-.image-set__container a:hover, .image-set__container a:active {
-	color: #b64f3f;
-}
-
-*/
-
-
-
+.image-set__grid li:nth-child(1) a { margin-left: 10px; margin-bottom: 20px; }
+.image-set__grid li:nth-child(2) a { margin-left: 20px; margin-bottom: 20px; }
+.image-set__grid li:nth-child(3) a { margin-left: 10px; }
+.image-set__grid li:nth-child(4) a { margin-left: 20px; }
 
 
 
@@ -583,15 +473,23 @@ a:hover, a:active {
 		position: relative;
 		width: 100%;
 		height: 325px;
+		margin-right: 0;
+	}
+	.image-set__main {
+		width: 100%;
 	}
 	.image-set__grid {
 		float: none;
 		width: 100%;
 	}
 	.image-set__grid a {
-		width: 25%;
-		padding-top: 25%;
+		width: calc(25% - 15px);
+		padding-top: calc(25% - 20px);
 	}
+	.image-set__grid li:nth-child(1) a { margin: 20px 0 0 0; }
+	.image-set__grid li:nth-child(2) a { margin: 20px 0 0 20px; }
+	.image-set__grid li:nth-child(3) a { margin: 20px 0 0 20px; }
+	.image-set__grid li:nth-child(4) a { margin: 20px 0 0 20px; }
 }
 
 
