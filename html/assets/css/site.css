@@ -132,7 +132,7 @@ a:hover, a:active {
 
 
 .title--section {
-	margin-bottom: 24px;
+	margin-bottom: 33px;
 	padding: 34px 10px 19px;
 	font-family: Montserrat, Tahoma, Geneva, sans-serif;
 	font-size: 21px;
@@ -312,7 +312,7 @@ a:hover, a:active {
 }
 
 .list__item {
-	margin-bottom: 27px;
+	margin-bottom: 32px;
 }
 
 .list__item h3 {
@@ -339,8 +339,14 @@ a:hover, a:active {
 	line-height: 24px;
 }
 
+
+.list--condensed {
+	padding-top: 38px;
+}
+
 .list--condensed .list__item {
 	font-size: 14px;
+	line-height: 21px;
 }
 
 
