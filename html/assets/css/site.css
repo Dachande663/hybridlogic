@@ -536,14 +536,20 @@ a:hover, a:active {
 
 
 
-@media (max-width: 480px) {
-/*
-	#header { text-align: center; }
-	#header h1 a { float: none; }
-	#menu { float: none; }
-	.hero h1 { margin: 0; font-size: 45px; line-height: 45px; }
-*/
 
+
+@media (max-width: 480px) {
+	body { padding: 0 12px; }
+	#header h1 a { float: none; margin: 10px 0 0; text-align: center; }
+	#menu { float: none; margin-top: 0; text-align: center; }
+	#menu li:nth-child(1) { display: inline-block; }
+	.hero { padding-bottom: 0; }
+	.hero h1 { font-size: 40px; }
+}
+
+
+
+@media (max-width: 480px) {
 	.col--1 { width: 8.33%; }
 	.col--2 { width: 16.67%; }
 	.col--3 { width: 100%; }
@@ -556,8 +562,6 @@ a:hover, a:active {
 	.col--10 { width: 83.33%; }
 	.col--11 { width: 91.67%; }
 	.col--12 { width: 100%; }
-
-
 }
 
 
