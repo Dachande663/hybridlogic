@@ -572,6 +572,7 @@ a:hover, a:active {
 	.hero h1 { font-size: 40px; }
 	.text--primary { margin-bottom: 0; padding-right: 7px; font-size: 18px; }
 	.stats { padding: 0 7px; text-align: center; }
+	.list--condensed { padding-top: 0; }
 }
 
 
