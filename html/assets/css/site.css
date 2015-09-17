@@ -361,6 +361,48 @@ a:hover, a:active {
 
 
 
+.stat-boxes {
+	font-size: 0;
+}
+
+.stat-box {
+	display: inline-block;
+	width: 25%;
+	background: #3672ba;
+	font-size: 18px;
+	text-align: center;
+	color: #fff;
+}
+
+.stat__value {
+	display: block;
+	padding: 28px 0 14px;
+	font-size: 36px;
+}
+
+.stat__label {
+	display: block;
+	padding: 0 0 21px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
