@@ -385,8 +385,11 @@ a:hover, a:active {
 	padding: 0 0 21px;
 }
 
-
-
+@media (max-width: 1024px) {
+	.stat-box {
+		width: 100%;
+	}
+}
 
 
 
