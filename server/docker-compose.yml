@@ -1,0 +1,27 @@
+web:
+  image: dachande663/hl-apache:v1
+  ports:
+    - "80:80"
+  environment:
+    - ENV=local
+    - DB_NAME=hl8_dev
+    - DB_USER=root
+    - DB_PASSWORD=root
+    - DB_HOST=192.168.1.64
+  links:
+    - memcached
+    - mysql
+  volumes:
+    - ../site:/srv/www/htdocs
+
+memcached:
+  image: memcached
+  ports:
+    - "11211"
+
+mysql:
+  image: mysql
+  ports:
+    - "3306:3306"
+  environment:
+    - MYSQL_ROOT_PASSWORD=password
